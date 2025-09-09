@@ -1,6 +1,7 @@
 import 'package:rpg_v2/entidades/Duelo.dart';
 import 'package:rpg_v2/entidades/dado.dart';
 import 'package:rpg_v2/entidades/heroi.dart';
+import 'package:rpg_v2/entidades/monstro.dart';
 import 'package:rpg_v2/entidades/personagem.dart';
 
 void main() {
@@ -13,7 +14,9 @@ void main() {
     reino: 'não tem, sem teto, toco de charuto',
     missao: 'matar a peka',
   );
-  final pekkaCaveleiro = Personagem(
+  final pekkaCaveleiro = Monstro(
+    origem: 'Hell',
+    tipoCriatura: 'Espirito',
     nome: 'Pekka Cavaleiro',
     vida: 10,
     escudo: 5,
