@@ -1,11 +1,17 @@
 abstract class Raca {
-  final int bonusVida;
-  final int bonusEscudo;
-  final int bonusAtaque;
+  final int _bonusVida;
+  final int _bonusEscudo;
+  final int _bonusAtaque;
 
   Raca({
-    required this.bonusVida,
-    required this.bonusEscudo,
-    required this.bonusAtaque,
-  });
+    required int bonusVida,
+    required int bonusEscudo,
+    required int bonusAtaque,
+  }) : _bonusVida = bonusVida,
+       _bonusEscudo = bonusEscudo,
+       _bonusAtaque = bonusAtaque;
+
+  int get bonusVida => _bonusVida;
+  int get bonusEscudo => _bonusEscudo;
+  int get bonusAtaque => _bonusAtaque;
 }
