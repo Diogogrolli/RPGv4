@@ -11,6 +11,7 @@ class Monstro extends Personagem {
     required super.vida,
     required super.escudo,
     required super.velocidade,
+    required super.raca,
   }) : _origem = origem,
        _tipoCriatura = tipoCriatura;
 }
