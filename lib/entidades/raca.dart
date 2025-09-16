@@ -1,9 +1,11 @@
 abstract class Raca {
+  final String nome;
   final int _bonusVida;
   final int _bonusEscudo;
   final int _bonusAtaque;
 
   Raca({
+    required this.nome,
     required int bonusVida,
     required int bonusEscudo,
     required int bonusAtaque,

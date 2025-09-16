@@ -1,5 +1,6 @@
 import 'package:rpg_v2/entidades/heroi.dart';
 import 'package:rpg_v2/entidades/personagem.dart';
+import 'package:rpg_v2/entidades/raca.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -12,6 +13,7 @@ void main() {
         vida: 10,
         escudo: 10,
         velocidade: 10,
+        raca: 
       );
       expect(heroi, isA<Heroi>());
       expect(heroi, isA<Personagem>());
@@ -26,6 +28,7 @@ void main() {
       velocidade: 10,
       reino: '',
       missao: '',
+      raca: 
     );
     expect(personagem, isA<Personagem>());
   });
@@ -36,11 +39,13 @@ void main() {
       vida: 15,
       escudo: 12,
       velocidade: 33,
+      //raca: 
     );
     expect(personagem.nome, 'Maria');
     expect(personagem.vida, 15);
     expect(personagem.escudo, 12);
     expect(personagem.velocidade, 33);
+    //expect(personagem.raca, )
   });
 
   test('Deve reduzir a vida ao defender e receber dano.', () {

@@ -12,7 +12,7 @@ abstract class Personagem {
     required int vida,
     required int escudo,
     required int velocidade,
-    required Raca raca,
+    required Raca raca, // TIRAR DUVIDA COM O PROFESSOR
   }) : _nome = nome,
        _vida = vida + raca.bonusVida,
        _escudo = escudo + raca.bonusEscudo,
@@ -23,6 +23,7 @@ abstract class Personagem {
   int get vida => _vida;
   int get escudo => _escudo;
   int get velocidade => _velocidade;
+  Raca get raca => _raca;
 
   void defender(int dano) {
     var danoReal = dano - _escudo;

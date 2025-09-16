@@ -4,7 +4,6 @@ import 'package:rpg_v2/entidades/elfo.dart';
 import 'package:rpg_v2/entidades/heroi.dart';
 import 'package:rpg_v2/entidades/humano.dart';
 import 'package:rpg_v2/entidades/monstro.dart';
-import 'package:rpg_v2/entidades/personagem.dart';
 
 void main() {
   final dado = Dado(20);
