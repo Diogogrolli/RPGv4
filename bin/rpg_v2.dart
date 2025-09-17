@@ -7,7 +7,7 @@ import 'package:rpg_v2/entidades/monstro.dart';
 
 void main() {
   final dado = Dado(20);
-  final racaHeroi = Humano(bonusVida: 10, bonusEscudo: 3, bonusAtaque: 7);
+  final racaHeroi = Humano(bonusVida: 10, bonusEscudo: 7, bonusAtaque: 3);
   final megaCavaleiro = Heroi(
     nome: 'Mega Cavaleiro',
     vida: 10,

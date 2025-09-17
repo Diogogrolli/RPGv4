@@ -1,9 +1,12 @@
 import 'package:rpg_v2/entidades/raca.dart';
 
 class Orc extends Raca {
-  Orc({
-    required super.bonusVida,
-    required super.bonusEscudo,
-    required super.bonusAtaque,
-  });
+  Orc()
+    :super(
+      nome: "Elfinho",
+      bonusAtaque: 10,
+      bonusEscudo: 10,
+      bonusVida: 13,
+    );
+
 }
